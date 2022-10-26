@@ -1,0 +1,24 @@
+ #logoAP {
+    width: 200px;
+ }
+ 
+ #divRedes {
+margin-top: 1px;
+float: inline-start;
+ }
+
+ .rSociales {
+    width: 50px;
+    float: right;
+}
+
+#banner {
+   position: absolute;
+   z-index: -1;
+   width: 80%;
+   height: 80%;
+   margin-left: 11%;
+   margin-top: 5%;
+   border-radius: 13%;
+   
+}

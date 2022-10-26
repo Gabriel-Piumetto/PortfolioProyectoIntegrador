@@ -23,9 +23,12 @@
               "src/assets"
             ],
             "styles": [
+              "F:/ARGENTINA PROGRAMA/PortfolioProyectoIntegrador/FrontEnd/PortfolioGabrielPiumetto/node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "F:/ARGENTINA PROGRAMA/PortfolioProyectoIntegrador/FrontEnd/PortfolioGabrielPiumetto/node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
