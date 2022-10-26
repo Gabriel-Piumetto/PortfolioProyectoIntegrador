@@ -1,15 +1,13 @@
  #logoAP {
-    width: 200px;
+    width: 300px;
  }
  
- #divRedes {
-margin-top: 1px;
-float: inline-start;
- }
+
 
  .rSociales {
-    width: 50px;
-    float: right;
+   position: relative;
+   width: 70px;
+   float: right;
 }
 
 #banner {
@@ -22,3 +20,16 @@ float: inline-start;
    border-radius: 13%;
    
 }
+
+@media (max-width: 575px) {
+.rSociales {
+    width: 50px;
+   float: right;}
+#banner {
+   width: 50%;
+   height:30%;
+   margin-left: 22%;
+}
+
+}
+
