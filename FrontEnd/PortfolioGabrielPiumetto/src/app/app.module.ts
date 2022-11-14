@@ -10,7 +10,7 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
 import { HardAndSoftSkillsComponent } from './componentes/hard-and-soft-skills/hard-and-soft-skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    HttpClient,
   ],
   providers: [],
   bootstrap: [AppComponent]
