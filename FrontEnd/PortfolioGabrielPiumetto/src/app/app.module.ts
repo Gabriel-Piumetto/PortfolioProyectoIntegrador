@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
@@ -10,7 +10,6 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
 import { HardAndSoftSkillsComponent } from './componentes/hard-and-soft-skills/hard-and-soft-skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,10 +23,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule,
-    HttpClient,
   ],
   providers: [],
   bootstrap: [AppComponent]
