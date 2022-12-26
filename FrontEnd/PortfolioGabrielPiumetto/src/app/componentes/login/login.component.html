@@ -1,7 +1,12 @@
+
 <div class="loginBox"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
     <h3>Iniciar Sesión</h3>
-    <form action="login.php" method="post">
-        <div class="inputBox"> <input id="uname" type="text" name="Username" placeholder="Nombre de Usuario"> <input id="pass" type="password" name="Password" placeholder="Contraseña"> </div> <input type="submit" name="" value="Iniciar sesión">
+    <form #f="ngForm"(ngSubmit)="onLogin()" novalidate>
+        <div class="inputBox"> 
+            <input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Nombre de Usuario" [(ngModel)]="nombreUsuario"name="nombreUsuario"required> 
+            <input id="password" type="password" name="password" placeholder="Contraseña" [(ngModel)]="password" name="password" required> 
+        </div>
+             <input type="submit" name="" value="Iniciar sesión">
     </form> 
     <a href="#">Crear nuevo usuario<br> </a>
     <div class="text-center">

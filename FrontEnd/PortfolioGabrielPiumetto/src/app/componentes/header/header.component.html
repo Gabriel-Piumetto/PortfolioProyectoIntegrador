@@ -6,7 +6,8 @@
     
      <a href=""> <img class="rSociales img-fluid" src="../../../assets/github.png"> </a>
 
-     <a href="/login"><button type="button" class="btn btn-outline-light">INICIAR SESIÓN</button> </a>
+     <a href="/login"><button type="button" class="btn btn-outline-light" *ngIf="!isLogged">INICIAR SESIÓN</button> </a>
+     <button type="button" class="btn btn-outline-light"(click)="onLogOut()" *ngIf="isLogged">CERRAR SESIÓN</button>
 </div>     
      
 
