@@ -14,6 +14,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './componentes/experiencia-laboral/new-experiencia.component';
+import { EditExperienciaComponent } from './componentes/experiencia-laboral/edit-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { interceptorProvider } from './service/interceptor-service';
     HardAndSoftSkillsComponent,
     ProyectosComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
