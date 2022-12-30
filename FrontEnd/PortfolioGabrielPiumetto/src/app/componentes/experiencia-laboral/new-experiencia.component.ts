@@ -25,7 +25,7 @@ export class NewExperienciaComponent implements OnInit {
     this.sExperiencia.save(expe).subscribe(
       data => {alert("Experiencia agregada");
     this.router.navigate(['']);
-    },(err: any) =>{alert("Falló");
+    },(err: any) =>{alert("Error al agregar nueva experiencia laboral");
     this.router.navigate(['']);})
   }
 
