@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
-@RequestMapping("/hys")
+@RequestMapping("/skill")
 public class CHys {
     
     @Autowired
@@ -51,7 +51,7 @@ public ResponseEntity<?> create (@RequestBody dtoHys dtohys){
 @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id")int id, @RequestBody dtoHys dtohys){
     if(!sHys.existsById(id)){
-        return new ResponseEntity(new Mensaje ("El ID no existe"), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity(new Mensaje ("Esa ID no existe"), HttpStatus.BAD_REQUEST);
     }
     if(sHys.existsByNombre(dtohys.getNombre())&& sHys.getByNombre(dtohys.getNombre()).get().getId()!=id){
        return new ResponseEntity(new Mensaje("Esa Skill ya existe"),HttpStatus.BAD_REQUEST);    
