@@ -19,7 +19,7 @@
                 
                 <div class="form-group">
                     <label for="img">Foto de perfil </label>
-                    <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)" 
+                    <input type="file" class="form-control" id="img" name="img" (change)="uploadImage($event)" 
                     accept=".jpg, .jpeg, .png">
                 </div>
 
