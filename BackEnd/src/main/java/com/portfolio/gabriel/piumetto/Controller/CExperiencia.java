@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("explab")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://gpfront-9680f.web.app")
 public class CExperiencia {
     @Autowired
     SExperiencia sExperiencia;

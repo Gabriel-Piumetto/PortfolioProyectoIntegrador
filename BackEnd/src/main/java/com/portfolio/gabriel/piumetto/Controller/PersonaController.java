@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/personas")
-@CrossOrigin(origins = {"http://localhost:4200"})
+@CrossOrigin(origins = {"https://gpfront-9680f.web.app"})
 public class PersonaController {
 /*  
     @Autowired
@@ -66,14 +66,14 @@ public class PersonaController {
     @Autowired
     ImpPersonaService impPersonaService;
   
-   @GetMapping("/lista")
+   @GetMapping({"/lista"})
    public ResponseEntity<List<Persona>>list(){
        List<Persona> list = impPersonaService.list();
        return new ResponseEntity(list, HttpStatus.OK);
                
     }
    
-   @GetMapping("/detail/{id}")
+   @GetMapping({"/detail/{id}"})
    public ResponseEntity<Persona>getByID(@PathVariable("id")int id){
        if(!impPersonaService.existsById(id)){
            return new ResponseEntity(new Mensaje("Esa ID no existe"),HttpStatus.NOT_FOUND);
@@ -93,7 +93,7 @@ public class PersonaController {
    }   
    
    @PreAuthorize("hasRole('ADMIN')") 
-   @PostMapping("/create")
+   @PostMapping({"/create"})
    public ResponseEntity<?> create(@RequestBody dtoPersona dtopersona){
        if(StringUtils.isBlank(dtopersona.getNombre())){
          return new ResponseEntity(new Mensaje ("El campo Nombre no puede estar en blanco"), HttpStatus.BAD_REQUEST);
@@ -116,7 +116,7 @@ public class PersonaController {
    }
    
    @PreAuthorize("hasRole('ADMIN')")
-   @PutMapping("/update/{id}")
+   @PutMapping({"/update/{id}"})
    public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPersona dtopersona){
        if(!impPersonaService.existsById(id)){
        return new ResponseEntity(new Mensaje("Esa ID no existe"),HttpStatus.NOT_FOUND);
