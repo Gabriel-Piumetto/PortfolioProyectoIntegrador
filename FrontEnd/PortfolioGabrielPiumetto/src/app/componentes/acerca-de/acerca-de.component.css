@@ -19,7 +19,18 @@
  #fotoperfil {
  position: absolute;
  border-radius:100%;
- width: 15%;}
+ width: 23%;
+ z-index: -1;}
+}
+
+#nombre{
+    margin-left: 11%;
+}
+#acerca{
+    margin-left: 11%;
+}
+#descrip{
+    margin-left: 11%;
 }
 
 

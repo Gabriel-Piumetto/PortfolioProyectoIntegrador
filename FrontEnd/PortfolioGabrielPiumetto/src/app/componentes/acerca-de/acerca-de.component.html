@@ -9,7 +9,7 @@
        
 
        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 ">
-         <img id="fotoperfil" src={{persona.img}} alt="Foto de perfil" class="img-fluid">
+         <img id="fotoperfil" src="{{persona.img}}"  alt="Foto de perfil" class="img-fluid">
        </div>
        
        
@@ -19,8 +19,8 @@
         <h1 id="nombre" >{{persona.nombre}} {{persona.apellido}}</h1>
         
         <span>
-           <h2>Acerca de mí</h2>
-           <p>{{persona.descripcion}}</p>  
+           <h2 id="acerca">Acerca de mí</h2>
+           <p id="descrip">{{persona.descripcion}}</p>  
          </span>
        </div>
 
