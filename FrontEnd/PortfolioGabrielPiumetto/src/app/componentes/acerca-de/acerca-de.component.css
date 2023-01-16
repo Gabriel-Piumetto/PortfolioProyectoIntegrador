@@ -6,29 +6,41 @@
 
 
 @media (max-width: 575px) {
+    .row{
+        position: relative;
+    }
+    #contenedor{
+      float: right;
+      top: 82%;
+      position: fixed;
+    }
     #fotoperfil {
+     position: fixed;
      float: right;
-     border-left:-3%;   
+     right: 1%;
+     margin-top: -41%;   
      border-radius:100%;
      width: 40%;
-     height:auto
+     height:auto;
+     z-index: -1;
     }
 
     #nombre{
-        float: right;
+        
         margin-left: 61%;
     }
     #acerca{
-        float: right;
+        
         margin-left: 61%;
     }
     #descrip{
-        float: right;
+        
         margin-left: 61%;
     }
     #boton{
+        
         float: right;
-        margin-right: 10%;
+        margin-right: 1%;
     }
     
     
@@ -36,24 +48,33 @@
 
 @media (min-width: 576px){
 
+#boton{
+    margin-left: 10%;
+}    
+
+ #contenedor {
+    margin-top: -46%;
+ }
+    
  #fotoperfil {
  position: absolute;
  margin-top: 1%;
  border-radius:100%;
  width: 45%;
  z-index: -1;}
-}
+
 
 #nombre{
-    margin-left: 58%;
+    margin-left: 60%;
 }
 #acerca{
-    margin-left: 58%;
+    margin-left: 60%;
 }
 #descrip{
-    margin-left: 58%;
+    margin-left: 60%;
+    
 }
-
+}
 
 *{
     color: white;

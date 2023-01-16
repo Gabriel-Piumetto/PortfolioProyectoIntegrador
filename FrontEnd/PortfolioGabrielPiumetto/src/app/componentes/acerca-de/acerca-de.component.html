@@ -1,6 +1,8 @@
     <div class="row">
-
-      <div>
+    
+      <div id="contenedor">
+      
+        <div>
          <button class="btn btn-primary" id="boton" type="button" routerLink="/editacercade/{{persona.id}}" *ngIf="isLogged">
              Editar Persona
           </button>
@@ -23,6 +25,8 @@
            <p id="descrip">{{persona.descripcion}}</p>  
          </span>
        </div>
+      
+      </div> 
 
     
     </div>

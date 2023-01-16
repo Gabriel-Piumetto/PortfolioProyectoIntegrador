@@ -26,9 +26,11 @@
     width: 50px;
    float: right;}
 #banner {
-   width: 50%;
-   height:30%;
-   margin-left: 22%;
+   position: fixed;
+   width: 70%;
+   height:70%;
+   margin-left: 29%;
+   float: right;
 }
 
 }
