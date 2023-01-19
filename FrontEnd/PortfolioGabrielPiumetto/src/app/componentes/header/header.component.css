@@ -22,15 +22,25 @@
 }
 
 @media (max-width: 575px) {
-.rSociales {
-    width: 50px;
-   float: right;}
+#github {
+   position: absolute; 
+   width: 50px;
+   top:5%;
+   right: -79.5%;
+}
+#facebook {
+   position: absolute; 
+   width: 50px;
+   top:5%;
+   right: -65.5%;
+}   
+
 #banner {
-   position: fixed;
-   width: 70%;
-   height:70%;
-   margin-left: 29%;
-   float: right;
+   position: absolute;
+   width: 128%;
+   height: 45%;
+   top: 0%;
+   margin-left: 52%;   
 }
 
 }
