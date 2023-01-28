@@ -11,7 +11,7 @@
     }
     #contenedor{
       float: right;
-      top: 82%;
+      top: 78%;
       position: fixed;
     }
     #fotoperfil {
@@ -48,32 +48,35 @@
 
 @media (min-width: 576px){
 
-#boton{
+p{
+    font-weight: bold;
+}
+
+    #boton{
     margin-left: 10%;
 }    
 
- #contenedor {
-    margin-top: -46%;
- }
+ 
     
  #fotoperfil {
- position: absolute;
- margin-top: 1%;
+ position: fixed;
+ margin-top: -2%;
  border-radius:100%;
- width: 45%;
+ width: 17%;
  z-index: -1;}
 
 
 #nombre{
-    margin-left: 60%;
+    margin-left: 20%;
 }
 #acerca{
-    margin-left: 60%;
+    margin-left: 20%;
 }
 #descrip{
-    margin-left: 60%;
-    
+    margin-left: 20%;
+   
 }
+
 }
 
 *{
